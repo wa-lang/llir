@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/llir/llvm/internal/gep"
+	"github.com/llir/llvm/ir/internal/gep"
 	"github.com/llir/llvm/ir/types"
 )
 

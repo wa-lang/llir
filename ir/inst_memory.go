@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/llir/llvm/internal/gep"
 	"github.com/llir/llvm/ir/constant"
 	"github.com/llir/llvm/ir/enum"
+	"github.com/llir/llvm/ir/internal/gep"
 	"github.com/llir/llvm/ir/types"
 	"github.com/llir/llvm/ir/value"
 )

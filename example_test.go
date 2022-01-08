@@ -1,11 +1,11 @@
-package ir_test
+package llir_test
 
 import (
 	"fmt"
 
-	"github.com/llir/llvm/ir"
-	"github.com/llir/llvm/ir/constant"
-	"github.com/llir/llvm/ir/types"
+	"github.com/wa-lang/llir"
+	"github.com/wa-lang/llir/constant"
+	"github.com/wa-lang/llir/types"
 )
 
 func Example() {
@@ -31,12 +31,12 @@ func Example() {
 	c := constant.NewInt(i32, 1)         // increment of the PRNG.
 
 	// Create a new LLVM IR module.
-	m := ir.NewModule()
+	m := llir.NewModule()
 
 	// Create an external function declaration and append it to the module.
 	//
 	//    int abs(int x);
-	abs := m.NewFunc("abs", i32, ir.NewParam("x", i32))
+	abs := m.NewFunc("abs", i32, llir.NewParam("x", i32))
 
 	// Create a global variable definition and append it to the module.
 	//

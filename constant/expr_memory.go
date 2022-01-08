@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/llir/llvm/ir/internal/gep"
-	"github.com/llir/llvm/ir/types"
+	"github.com/wa-lang/llir/internal/gep"
+	"github.com/wa-lang/llir/types"
 )
 
 // --- [ Memory expressions ] --------------------------------------------------

@@ -1,8 +1,8 @@
 package metadata
 
 import (
-	"github.com/llir/llvm/ir/enum"
-	"github.com/llir/llvm/ir/value"
+	"github.com/wa-lang/llir/enum"
+	"github.com/wa-lang/llir/value"
 )
 
 // Assert that each metadata node implements the metadata.Node interface.

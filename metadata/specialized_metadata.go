@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/llir/llvm/ir/enum"
+	"github.com/wa-lang/llir/enum"
 )
 
 // ~~~ [ DIBasicType ] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

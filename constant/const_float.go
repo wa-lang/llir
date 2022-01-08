@@ -8,7 +8,6 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/llir/llvm/ir/types"
 	"github.com/mewmew/float"
 	"github.com/mewmew/float/bfloat"
 	"github.com/mewmew/float/binary128"
@@ -16,6 +15,7 @@ import (
 	"github.com/mewmew/float/float128ppc"
 	"github.com/mewmew/float/float80x86"
 	"github.com/pkg/errors"
+	"github.com/wa-lang/llir/types"
 )
 
 // --- [ Floating-point constants ] --------------------------------------------

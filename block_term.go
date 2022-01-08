@@ -1,8 +1,8 @@
-package ir
+package llir
 
 import (
-	"github.com/llir/llvm/ir/constant"
-	"github.com/llir/llvm/ir/value"
+	"github.com/wa-lang/llir/constant"
+	"github.com/wa-lang/llir/value"
 )
 
 // --- [ Terminators ] ---------------------------------------------------------

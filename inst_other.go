@@ -1,12 +1,12 @@
-package ir
+package llir
 
 import (
 	"fmt"
 	"strings"
 
-	"github.com/llir/llvm/ir/enum"
-	"github.com/llir/llvm/ir/types"
-	"github.com/llir/llvm/ir/value"
+	"github.com/wa-lang/llir/enum"
+	"github.com/wa-lang/llir/types"
+	"github.com/wa-lang/llir/value"
 )
 
 // --- [ Other instructions ] --------------------------------------------------

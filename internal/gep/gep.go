@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/llir/llvm/ir/types"
+	"github.com/wa-lang/llir/types"
 )
 
 // Index is a gep index.

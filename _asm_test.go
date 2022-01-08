@@ -1,4 +1,4 @@
-package ir_test
+package llir_test
 
 import (
 	"io/ioutil"

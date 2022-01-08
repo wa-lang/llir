@@ -1,12 +1,12 @@
-package ir_test
+package llir_test
 
 import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/llir/llvm/ir"
-	"github.com/llir/llvm/ir/constant"
-	"github.com/llir/llvm/ir/types"
+	ir "github.com/wa-lang/llir"
+	"github.com/wa-lang/llir/constant"
+	"github.com/wa-lang/llir/types"
 )
 
 func TestAssignGlobalIDs(t *testing.T) {

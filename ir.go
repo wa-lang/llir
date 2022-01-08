@@ -1,5 +1,5 @@
 // Package ir declares the types used to represent LLVM IR modules.
-package ir
+package llir
 
 // LLStringer is implemented by any value that has a LLString method, which
 // defines the LLVM syntax for that value.

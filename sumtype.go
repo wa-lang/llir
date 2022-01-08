@@ -1,4 +1,4 @@
-package ir
+package llir
 
 // === [ constant.Constant ] ===================================================
 

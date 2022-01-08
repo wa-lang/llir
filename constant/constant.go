@@ -2,8 +2,8 @@
 package constant
 
 import (
-	"github.com/llir/llvm/ir/types"
-	"github.com/llir/llvm/ir/value"
+	"github.com/wa-lang/llir/types"
+	"github.com/wa-lang/llir/value"
 )
 
 // === [ Constants ] ===========================================================
@@ -27,54 +27,54 @@ var (
 //
 // https://llvm.org/docs/LangRef.html#simple-constants
 //
-//    *constant.Int         // https://godoc.org/github.com/llir/llvm/ir/constant#Int
-//    *constant.Float       // https://godoc.org/github.com/llir/llvm/ir/constant#Float
-//    *constant.Null        // https://godoc.org/github.com/llir/llvm/ir/constant#Null
-//    *constant.NoneToken   // https://godoc.org/github.com/llir/llvm/ir/constant#NoneToken
+//    *constant.Int         // https://godoc.org/github.com/wa-lang/llir/constant#Int
+//    *constant.Float       // https://godoc.org/github.com/wa-lang/llir/constant#Float
+//    *constant.Null        // https://godoc.org/github.com/wa-lang/llir/constant#Null
+//    *constant.NoneToken   // https://godoc.org/github.com/wa-lang/llir/constant#NoneToken
 //
 // Complex constants
 //
 // https://llvm.org/docs/LangRef.html#complex-constants
 //
-//    *constant.Struct            // https://godoc.org/github.com/llir/llvm/ir/constant#Struct
-//    *constant.Array             // https://godoc.org/github.com/llir/llvm/ir/constant#Array
-//    *constant.CharArray         // https://godoc.org/github.com/llir/llvm/ir/constant#CharArray
-//    *constant.Vector            // https://godoc.org/github.com/llir/llvm/ir/constant#Vector
-//    *constant.ZeroInitializer   // https://godoc.org/github.com/llir/llvm/ir/constant#ZeroInitializer
+//    *constant.Struct            // https://godoc.org/github.com/wa-lang/llir/constant#Struct
+//    *constant.Array             // https://godoc.org/github.com/wa-lang/llir/constant#Array
+//    *constant.CharArray         // https://godoc.org/github.com/wa-lang/llir/constant#CharArray
+//    *constant.Vector            // https://godoc.org/github.com/wa-lang/llir/constant#Vector
+//    *constant.ZeroInitializer   // https://godoc.org/github.com/wa-lang/llir/constant#ZeroInitializer
 //    TODO: include metadata node?
 //
 // Global variable and function addresses
 //
 // https://llvm.org/docs/LangRef.html#global-variable-and-function-addresses
 //
-//    *ir.Global   // https://godoc.org/github.com/llir/llvm/ir#Global
-//    *ir.Func     // https://godoc.org/github.com/llir/llvm/ir#Func
-//    *ir.Alias    // https://godoc.org/github.com/llir/llvm/ir#Alias
-//    *ir.IFunc    // https://godoc.org/github.com/llir/llvm/ir#IFunc
+//    *ir.Global   // https://godoc.org/github.com/wa-lang/llir#Global
+//    *ir.Func     // https://godoc.org/github.com/wa-lang/llir#Func
+//    *ir.Alias    // https://godoc.org/github.com/wa-lang/llir#Alias
+//    *ir.IFunc    // https://godoc.org/github.com/wa-lang/llir#IFunc
 //
 // Undefined values
 //
 // https://llvm.org/docs/LangRef.html#undefined-values
 //
-//    *constant.Undef   // https://godoc.org/github.com/llir/llvm/ir/constant#Undef
+//    *constant.Undef   // https://godoc.org/github.com/wa-lang/llir/constant#Undef
 //
 // Poison values
 //
 // https://llvm.org/docs/LangRef.html#poison-values
 //
-//    *constant.Poison   // https://godoc.org/github.com/llir/llvm/ir/constant#Poison
+//    *constant.Poison   // https://godoc.org/github.com/wa-lang/llir/constant#Poison
 //
 // Addresses of basic blocks
 //
 // https://llvm.org/docs/LangRef.html#addresses-of-basic-blocks
 //
-//    *constant.BlockAddress   // https://godoc.org/github.com/llir/llvm/ir/constant#BlockAddress
+//    *constant.BlockAddress   // https://godoc.org/github.com/wa-lang/llir/constant#BlockAddress
 //
 // Constant expressions
 //
 // https://llvm.org/docs/LangRef.html#constant-expressions
 //
-//    constant.Expression   // https://godoc.org/github.com/llir/llvm/ir/constant#Expression
+//    constant.Expression   // https://godoc.org/github.com/wa-lang/llir/constant#Expression
 type Constant interface {
 	value.Value
 	// IsConstant ensures that only constants can be assigned to the

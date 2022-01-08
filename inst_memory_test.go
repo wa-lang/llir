@@ -1,12 +1,12 @@
-package ir
+package llir
 
 import (
 	"fmt"
 	"testing"
 
-	"github.com/llir/llvm/ir/constant"
-	"github.com/llir/llvm/ir/types"
 	"github.com/pkg/errors"
+	"github.com/wa-lang/llir/constant"
+	"github.com/wa-lang/llir/types"
 )
 
 func TestTypeCheckStore(t *testing.T) {

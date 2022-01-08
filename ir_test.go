@@ -1,13 +1,13 @@
-package ir
+package llir
 
 import (
 	"strings"
 	"testing"
 
-	"github.com/llir/llvm/ir/constant"
-	"github.com/llir/llvm/ir/metadata"
-	"github.com/llir/llvm/ir/types"
-	"github.com/llir/llvm/ir/value"
+	"github.com/wa-lang/llir/constant"
+	"github.com/wa-lang/llir/metadata"
+	"github.com/wa-lang/llir/types"
+	"github.com/wa-lang/llir/value"
 )
 
 func TestModuleString(t *testing.T) {

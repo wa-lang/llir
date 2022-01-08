@@ -3,8 +3,8 @@ package constant_test
 import (
 	"testing"
 
-	"github.com/llir/llvm/ir/constant"
-	"github.com/llir/llvm/ir/types"
+	"github.com/wa-lang/llir/constant"
+	"github.com/wa-lang/llir/types"
 )
 
 func TestNewFloatFromStringForPPCFP128(t *testing.T) {

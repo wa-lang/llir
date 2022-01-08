@@ -1,13 +1,13 @@
 // This example program analyses an LLVM IR module to produce a callgraph in
 // Graphviz DOT format.
-package ir_test
+package llir_test
 
 import (
 	"fmt"
 	"strings"
 
 	"github.com/llir/llvm/asm"
-	"github.com/llir/llvm/ir"
+	"github.com/wa-lang/llir"
 )
 
 func Example_callgraph() {

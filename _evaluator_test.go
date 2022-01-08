@@ -1,17 +1,17 @@
 // This example program parses testdata/eval.ll, evaluates the return value of
 // the @main function and prints the result to standard output. The result
 // should be 42.
-package ir_test
+package llir_test
 
 import (
 	"fmt"
 	"log"
 
 	"github.com/llir/llvm/asm"
-	"github.com/llir/llvm/ir"
-	"github.com/llir/llvm/ir/constant"
-	"github.com/llir/llvm/ir/types"
-	"github.com/llir/llvm/ir/value"
+	"github.com/wa-lang/llir"
+	"github.com/wa-lang/llir/constant"
+	"github.com/wa-lang/llir/types"
+	"github.com/wa-lang/llir/value"
 )
 
 func Example_evaluator() {

@@ -1,11 +1,11 @@
-package ir
+package llir
 
 import (
 	"testing"
 
-	"github.com/llir/llvm/ir/constant"
-	"github.com/llir/llvm/ir/types"
-	"github.com/llir/llvm/ir/value"
+	"github.com/wa-lang/llir/constant"
+	"github.com/wa-lang/llir/types"
+	"github.com/wa-lang/llir/value"
 )
 
 func TestTypeCheckInstExtractValue(t *testing.T) {

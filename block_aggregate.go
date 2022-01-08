@@ -1,7 +1,7 @@
-package ir
+package llir
 
 import (
-	"github.com/llir/llvm/ir/value"
+	"github.com/wa-lang/llir/value"
 )
 
 // --- [ Aggregate instructions ] ----------------------------------------------

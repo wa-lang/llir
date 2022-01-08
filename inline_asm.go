@@ -1,10 +1,10 @@
-package ir
+package llir
 
 import (
 	"fmt"
 	"strings"
 
-	"github.com/llir/llvm/ir/types"
+	"github.com/wa-lang/llir/types"
 )
 
 // InlineAsm is an inline assembler expression.

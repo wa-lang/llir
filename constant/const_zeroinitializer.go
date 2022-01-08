@@ -3,7 +3,7 @@ package constant
 import (
 	"fmt"
 
-	"github.com/llir/llvm/ir/types"
+	"github.com/wa-lang/llir/types"
 )
 
 // --- [ zeroinitializer constants ] -------------------------------------------

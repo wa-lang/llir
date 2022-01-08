@@ -1,4 +1,4 @@
-package ir
+package llir
 
 import (
 	"fmt"
@@ -6,11 +6,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/llir/llvm/ir/enum"
-	"github.com/llir/llvm/ir/internal/enc"
-	"github.com/llir/llvm/ir/metadata"
-	"github.com/llir/llvm/ir/types"
-	"github.com/llir/llvm/ir/value"
+	"github.com/wa-lang/llir/enum"
+	"github.com/wa-lang/llir/internal/enc"
+	"github.com/wa-lang/llir/metadata"
+	"github.com/wa-lang/llir/types"
+	"github.com/wa-lang/llir/value"
 )
 
 // Align is a memory alignment attribute.

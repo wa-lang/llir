@@ -5,8 +5,8 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/llir/llvm/ir/types"
 	"github.com/pkg/errors"
+	"github.com/wa-lang/llir/types"
 )
 
 // --- [ Integer constants ] ---------------------------------------------------

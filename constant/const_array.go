@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/llir/llvm/ir/internal/enc"
-	"github.com/llir/llvm/ir/types"
+	"github.com/wa-lang/llir/internal/enc"
+	"github.com/wa-lang/llir/types"
 )
 
 // --- [ Array constants ] -----------------------------------------------------

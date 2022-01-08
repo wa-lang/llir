@@ -1,13 +1,13 @@
-package ir
+package llir
 
 import (
 	"fmt"
 	"strings"
 
-	"github.com/llir/llvm/ir/constant"
-	"github.com/llir/llvm/ir/enum"
-	"github.com/llir/llvm/ir/types"
-	"github.com/llir/llvm/ir/value"
+	"github.com/wa-lang/llir/constant"
+	"github.com/wa-lang/llir/enum"
+	"github.com/wa-lang/llir/types"
+	"github.com/wa-lang/llir/value"
 )
 
 // === [ Terminators ] =========================================================
@@ -20,18 +20,18 @@ import (
 //
 // https://llvm.org/docs/LangRef.html#terminator-instructions
 //
-//    *ir.TermRet           // https://godoc.org/github.com/llir/llvm/ir#TermRet
-//    *ir.TermBr            // https://godoc.org/github.com/llir/llvm/ir#TermBr
-//    *ir.TermCondBr        // https://godoc.org/github.com/llir/llvm/ir#TermCondBr
-//    *ir.TermSwitch        // https://godoc.org/github.com/llir/llvm/ir#TermSwitch
-//    *ir.TermIndirectBr    // https://godoc.org/github.com/llir/llvm/ir#TermIndirectBr
-//    *ir.TermInvoke        // https://godoc.org/github.com/llir/llvm/ir#TermInvoke
-//    *ir.TermCallBr        // https://godoc.org/github.com/llir/llvm/ir#TermCallBr
-//    *ir.TermResume        // https://godoc.org/github.com/llir/llvm/ir#TermResume
-//    *ir.TermCatchSwitch   // https://godoc.org/github.com/llir/llvm/ir#TermCatchSwitch
-//    *ir.TermCatchRet      // https://godoc.org/github.com/llir/llvm/ir#TermCatchRet
-//    *ir.TermCleanupRet    // https://godoc.org/github.com/llir/llvm/ir#TermCleanupRet
-//    *ir.TermUnreachable   // https://godoc.org/github.com/llir/llvm/ir#TermUnreachable
+//    *ir.TermRet           // https://godoc.org/github.com/wa-lang/llir#TermRet
+//    *ir.TermBr            // https://godoc.org/github.com/wa-lang/llir#TermBr
+//    *ir.TermCondBr        // https://godoc.org/github.com/wa-lang/llir#TermCondBr
+//    *ir.TermSwitch        // https://godoc.org/github.com/wa-lang/llir#TermSwitch
+//    *ir.TermIndirectBr    // https://godoc.org/github.com/wa-lang/llir#TermIndirectBr
+//    *ir.TermInvoke        // https://godoc.org/github.com/wa-lang/llir#TermInvoke
+//    *ir.TermCallBr        // https://godoc.org/github.com/wa-lang/llir#TermCallBr
+//    *ir.TermResume        // https://godoc.org/github.com/wa-lang/llir#TermResume
+//    *ir.TermCatchSwitch   // https://godoc.org/github.com/wa-lang/llir#TermCatchSwitch
+//    *ir.TermCatchRet      // https://godoc.org/github.com/wa-lang/llir#TermCatchRet
+//    *ir.TermCleanupRet    // https://godoc.org/github.com/wa-lang/llir#TermCleanupRet
+//    *ir.TermUnreachable   // https://godoc.org/github.com/wa-lang/llir#TermUnreachable
 type Terminator interface {
 	LLStringer
 	// Succs returns the successor basic blocks of the terminator.

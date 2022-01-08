@@ -1,11 +1,11 @@
-package ir_test
+package llir_test
 
 import (
 	"fmt"
 
-	"github.com/llir/llvm/ir"
-	"github.com/llir/llvm/ir/constant"
-	"github.com/llir/llvm/ir/types"
+	ir "github.com/wa-lang/llir"
+	"github.com/wa-lang/llir/constant"
+	"github.com/wa-lang/llir/types"
 )
 
 func Example_main() {

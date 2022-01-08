@@ -1,6 +1,6 @@
-package ir
+package llir
 
-import "github.com/llir/llvm/ir/types"
+import "github.com/wa-lang/llir/types"
 
 // --- [ Type definitions ] ----------------------------------------------------
 

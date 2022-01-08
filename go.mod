@@ -1,4 +1,4 @@
-module github.com/llir/llvm/ir
+module github.com/wa-lang/llir
 
 go 1.17
 

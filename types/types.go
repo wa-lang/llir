@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/llir/llvm/ir/internal/enc"
+	"github.com/wa-lang/llir/internal/enc"
 )
 
 // === [ Types ] ===============================================================
@@ -133,18 +133,18 @@ func Equal(t, u Type) bool {
 //
 // A Type has one of the following underlying types.
 //
-//    *types.VoidType       // https://godoc.org/github.com/llir/llvm/ir/types#VoidType
-//    *types.FuncType       // https://godoc.org/github.com/llir/llvm/ir/types#FuncType
-//    *types.IntType        // https://godoc.org/github.com/llir/llvm/ir/types#IntType
-//    *types.FloatType      // https://godoc.org/github.com/llir/llvm/ir/types#FloatType
-//    *types.MMXType        // https://godoc.org/github.com/llir/llvm/ir/types#MMXType
-//    *types.PointerType    // https://godoc.org/github.com/llir/llvm/ir/types#PointerType
-//    *types.VectorType     // https://godoc.org/github.com/llir/llvm/ir/types#VectorType
-//    *types.LabelType      // https://godoc.org/github.com/llir/llvm/ir/types#LabelType
-//    *types.TokenType      // https://godoc.org/github.com/llir/llvm/ir/types#TokenType
-//    *types.MetadataType   // https://godoc.org/github.com/llir/llvm/ir/types#MetadataType
-//    *types.ArrayType      // https://godoc.org/github.com/llir/llvm/ir/types#ArrayType
-//    *types.StructType     // https://godoc.org/github.com/llir/llvm/ir/types#StructType
+//    *types.VoidType       // https://godoc.org/github.com/wa-lang/llir/types#VoidType
+//    *types.FuncType       // https://godoc.org/github.com/wa-lang/llir/types#FuncType
+//    *types.IntType        // https://godoc.org/github.com/wa-lang/llir/types#IntType
+//    *types.FloatType      // https://godoc.org/github.com/wa-lang/llir/types#FloatType
+//    *types.MMXType        // https://godoc.org/github.com/wa-lang/llir/types#MMXType
+//    *types.PointerType    // https://godoc.org/github.com/wa-lang/llir/types#PointerType
+//    *types.VectorType     // https://godoc.org/github.com/wa-lang/llir/types#VectorType
+//    *types.LabelType      // https://godoc.org/github.com/wa-lang/llir/types#LabelType
+//    *types.TokenType      // https://godoc.org/github.com/wa-lang/llir/types#TokenType
+//    *types.MetadataType   // https://godoc.org/github.com/wa-lang/llir/types#MetadataType
+//    *types.ArrayType      // https://godoc.org/github.com/wa-lang/llir/types#ArrayType
+//    *types.StructType     // https://godoc.org/github.com/wa-lang/llir/types#StructType
 type Type interface {
 	fmt.Stringer
 	// LLString returns the LLVM syntax representation of the definition of the

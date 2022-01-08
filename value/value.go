@@ -4,7 +4,7 @@ package value
 import (
 	"fmt"
 
-	"github.com/llir/llvm/ir/types"
+	"github.com/wa-lang/llir/types"
 )
 
 // Value is an LLVM IR value, which may be used as an operand of instructions
@@ -12,8 +12,8 @@ import (
 //
 // A Value has one of the following underlying types.
 //
-//    constant.Constant   // https://godoc.org/github.com/llir/llvm/ir/constant#Constant
-//    value.Named         // https://godoc.org/github.com/llir/llvm/ir/value#Named
+//    constant.Constant   // https://godoc.org/github.com/wa-lang/llir/constant#Constant
+//    value.Named         // https://godoc.org/github.com/wa-lang/llir/value#Named
 //    TODO: add literal metadata value?
 type Value interface {
 	// String returns the LLVM syntax representation of the value as a type-value
@@ -29,14 +29,14 @@ type Value interface {
 //
 // A Named value has one of the following underlying types.
 //
-//    *ir.Global            // https://godoc.org/github.com/llir/llvm/ir#Global
-//    *ir.Func              // https://godoc.org/github.com/llir/llvm/ir#Func
-//    *ir.Param             // https://godoc.org/github.com/llir/llvm/ir#Param
-//    *ir.Block             // https://godoc.org/github.com/llir/llvm/ir#Block
+//    *ir.Global            // https://godoc.org/github.com/wa-lang/llir#Global
+//    *ir.Func              // https://godoc.org/github.com/wa-lang/llir#Func
+//    *ir.Param             // https://godoc.org/github.com/wa-lang/llir#Param
+//    *ir.Block             // https://godoc.org/github.com/wa-lang/llir#Block
 //    TODO: add named metadata value?
-//    ir.Instruction        // https://godoc.org/github.com/llir/llvm/ir#Instruction (except store and fence)
-//    *ir.TermInvoke        // https://godoc.org/github.com/llir/llvm/ir#TermInvoke
-//    *ir.TermCatchSwitch   // https://godoc.org/github.com/llir/llvm/ir#TermCatchSwitch (token result used by catchpad)
+//    ir.Instruction        // https://godoc.org/github.com/wa-lang/llir#Instruction (except store and fence)
+//    *ir.TermInvoke        // https://godoc.org/github.com/wa-lang/llir#TermInvoke
+//    *ir.TermCatchSwitch   // https://godoc.org/github.com/wa-lang/llir#TermCatchSwitch (token result used by catchpad)
 type Named interface {
 	Value
 	// Name returns the name of the value.

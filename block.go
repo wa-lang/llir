@@ -1,14 +1,14 @@
 // The basic block API of the ir package was heavily inspired by
 // https://github.com/mrbenshef/goory.
 
-package ir
+package llir
 
 import (
 	"fmt"
 	"strings"
 
-	"github.com/llir/llvm/ir/internal/enc"
-	"github.com/llir/llvm/ir/types"
+	"github.com/wa-lang/llir/internal/enc"
+	"github.com/wa-lang/llir/types"
 )
 
 // === [ Basic blocks ] ========================================================

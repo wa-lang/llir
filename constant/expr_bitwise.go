@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/llir/llvm/ir/enum"
-	"github.com/llir/llvm/ir/types"
+	"github.com/wa-lang/llir/enum"
+	"github.com/wa-lang/llir/types"
 )
 
 // --- [ Bitwise expressions ] -------------------------------------------------

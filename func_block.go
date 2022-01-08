@@ -1,4 +1,4 @@
-package ir
+package llir
 
 // NewBlock appends a new basic block to the function based on the given label
 // name. An empty label name indicates an unnamed basic block.

@@ -1,4 +1,4 @@
-package ir
+package llir
 
 import (
 	"fmt"
@@ -6,13 +6,13 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/llir/llvm/ir/enum"
-	"github.com/llir/llvm/ir/internal/enc"
-	"github.com/llir/llvm/ir/internal/natsort"
-	"github.com/llir/llvm/ir/metadata"
-	"github.com/llir/llvm/ir/types"
-	"github.com/llir/llvm/ir/value"
 	"github.com/pkg/errors"
+	"github.com/wa-lang/llir/enum"
+	"github.com/wa-lang/llir/internal/enc"
+	"github.com/wa-lang/llir/internal/natsort"
+	"github.com/wa-lang/llir/metadata"
+	"github.com/wa-lang/llir/types"
+	"github.com/wa-lang/llir/value"
 )
 
 // === [ Modules ] =============================================================

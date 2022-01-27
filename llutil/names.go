@@ -1,4 +1,4 @@
-package llirutil
+package llutil
 
 import (
 	"github.com/wa-lang/llir"

@@ -1,4 +1,4 @@
-package llirutil
+package llutil
 
 import (
 	"log"

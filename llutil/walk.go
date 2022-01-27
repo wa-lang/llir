@@ -2,7 +2,7 @@
 
 // Note: we only walk IR values during walk, not type not metadata fields.
 
-package llirutil
+package llutil
 
 import (
 	"fmt"
